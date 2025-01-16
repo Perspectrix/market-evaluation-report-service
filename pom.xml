@@ -29,15 +29,21 @@
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+	<repositories>
+		<repository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
+		</repository>
+	</repositories>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.perspectrix.market</groupId>
+			<groupId>com.github.Perspectrix</groupId>
 			<artifactId>market-evaluation-models</artifactId>
-			<version>1.0.1</version>
+			<version>v1.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
