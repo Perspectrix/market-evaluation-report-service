@@ -13,9 +13,10 @@ public class PersonService {
     public PersonService(WebClient webClient) {
         this.webClient = webClient;
     }
+
     public Person getPerson(String id) {
         return webClient.get()
-                .uri("/api/persons/{id}", id)
+                .uri("/api/read/{id}", id)
                 .retrieve()
                 .bodyToMono(Person.class)
                 .block();
